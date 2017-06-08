@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Non-Semantic Elements for HTML5</title>
+</head>
+<body>
+
+	<!-- 1.header -->
+	<!-- Header, title tables or others -->
+
+	<header>
+		
+		<h1>Page Title</h1>
+		<a href="http://www.google.com">Google</a>
+
+		<nav>
+			<ul>
+				<li><a href="#">1</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<article>
+		
+		<header>
+			<h1>Header Element in article</h1>
+		</header>
+
+	</article>
+
+
+
+
+	<!-- 2.footer -->
+	<!-- Footer information, such as author, date and etc. -->
+	<footer>
+		
+		<ul>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+		</ul>
+
+	</footer>
+
+
+	<article>
+		
+		<footer>This is a footer of a page. Footer can also be used in section bracket.</footer>
+
+	</article>
+
+
+
+	<!-- 3.hgroup -->
+	<!-- Make title and subtitle into groups. -->
+	<article>
+		
+		<header>
+
+			<hgroup>
+			
+			<h1>This is article's title.</h1>
+			<h2>This is the subtitile.</h2>
+
+			</hgroup>
+
+			<p><time datetime="2015-1-1">2015-1-1</time></p>
+
+		</header>
+
+		<div>
+			
+			This is article content.
+
+		</div>
+
+		<footer>
+			
+
+
+		</footer>
+
+	</article>
+
+
+	<!-- 4.address -->
+	<!-- Article information, email address and other contact infos. -->
+	<address>
+		
+		<a href="#">Author</a>
+
+	</address>
+
+
+	<footer>
+		
+		<div>
+			<address><a href="#">Author's info in div.</a></address>
+		</div>
+
+		<time><time datetime="2015-1-1">2015-1-1</time></time>
+
+	</footer>
+
+
+
+	<article>
+
+		<h1>HTML5的结构-大纲排列的规则</h1>
+		
+		<h1>显示编排内容区域块</h1>
+		<p>灵活运用section等元素创建文档结构, 在每一个区域块使用标题, 例如h1, h6, hgroup等.</p>
+
+		<h1>隐藏编排内容区域块</h1>
+		<p>不使用section等元素, 而是根据网页需求使用h1, h6等元素创建各级内容区域块.</p>
+
+		<h1>标题分级</h1>
+		<p>根据h1到h6, 上下级标题的关系生成不同级别的区域块.</p>
+
+		<h1>不同区域块使用相同级别的标题</h1>
+		<p></p>
+
+	</article>
+
+
+
+	<header>
+		
+		<h1>Header</h1>
+		<nav>
+			
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+			</ul>
+
+		</nav>
+
+	</header>
+
+	<article>
+		
+		<hgroup>
+			<h1>Article Main title</h1>
+			<h2>Subtitle</h2>
+		</hgroup>
+		<p>Main Content.</p>
+
+		<section>
+			<div>
+				
+				<article>
+					<h1>Comments title</h1>
+					<p>Comments content.</p>
+				</article>
+
+			</div>
+		</section>
+
+	</article>
+
+	<footer>
+		
+		<small>Authorization.</small>
+
+	</footer>
+
+
+
+</body>
+</html>

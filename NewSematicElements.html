@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head spellcheck>
+	<title>New Semantic Elements for HTML5</title>
+</head>
+<body>
+
+	<!-- 1.article -->
+	<!-- Use article elements to replace div. -->
+	<!-- Element article to realize embedded articles. Can be
+	used embeddedly. Same as div in diaplaying contents.-->
+
+	<article>
+		<header spellcheck>
+			<h1>Article Header H1</h1>
+			<p>Hello World</p>
+		</header>
+		<!-- <p>This is content.</p> -->
+
+		<article>
+
+			<header>Author</header>
+
+			<p>Main content.</p>
+
+			<footer>Time, location, etc...</footer>
+
+		</article>
+
+		<footer>
+			<p>This is outside Footer.</p>
+		</footer>
+	</article>
+
+	<!-- Use article to embed other pages. -->
+
+	<article>
+		<header>Article embedded page example</header>
+		<h1>This is an embedded page.</h1>
+
+		<object>
+			<embed src = "#" width = 600 height = 400></embed>
+		</object>
+
+	</article>
+
+
+
+	<!-- 2.section -->
+	<!-- Use section to block spaces on page, however section is not 
+	s normal element, when it's needed to be directly defined by
+	style or defined actions by scripting, use div instead. -->
+
+	<!-- Section: block texts or pages. Better be with a title. -->
+	<section>
+		
+		<h1>Apple</h1>
+		<p>This is a kind of friut.</p>
+
+	</section>
+	
+
+	<article>
+		
+		<h1>Apple</h1>
+		<p>This is a kind of fruit.</p>
+
+		<section>
+			
+			<h2>California Apple</h2>
+			<p>This is a kind of apple produced in California.</p>
+
+		</section>
+
+		<section>
+			
+			<h2>New Jersey Apple</h2>
+			<p>This is a kind of apple produced in New Jersey.</p>
+
+		</section>
+
+	</article>
+
+
+
+	<section>
+		
+		<h1>Fruit</h1>
+
+		<article>
+			
+			<h2>Apple</h2>
+			<p>Difference between article and section : These two element can be switched,
+			 in html5, artcile element can be treated as a special kind of section element,
+			 article element stress more on independency. For example if something content 
+			 needed to be blocked or seperated, we use section, if it's needed to be isolated
+			  then we use article. Div can do css style.</p>
+
+
+		</article>
+
+	</section>
+
+
+	<!-- 3.nav -->
+	<!-- Navigate to other pages, serves as a navigation group. -->
+
+	<nav>
+		
+		<ul>
+		
+			<li><a href="#"></a></li>	
+
+		</ul>
+
+	</nav>
+
+
+	<article>
+
+		<header>
+		<h1>HTML5 and CSS3</h1>
+		<nav>
+			
+			<ul>
+				
+				<li>HTML5</li>
+				<li>CSS3</li>
+
+			</ul>
+
+		</nav>
+		</header>
+
+
+		<section>
+			
+			<h1>HTML5 history</h1>
+			<p>This is content.</p>
+
+		</section>
+
+		<section>
+			
+			<h1>CSS3 history</h1>
+			<p>This is content.</p>
+
+		</section>
+
+
+		<footer>
+			<a href="#">Delete</a>
+			<a href="#">Modify</a>
+		</footer>
+
+
+	</article>
+
+
+	<footer>
+		
+		<p>Do not use menu to replace nav. Menu is used in web applications.</p>
+
+	</footer>
+
+
+
+	<!-- 4.aside -->
+	<!-- Any subside parts, anything different from main contents. -->
+
+
+	<header>
+
+		<h1>Aside inside article as supplyment.</h1>
+
+	</header>
+
+
+	<article>
+		
+		<h1>Semantic.</h1>
+		<p>Main content, we'll find aside element below.</p>
+
+		<aside>
+			
+			<h1>Aside elaboration</h1>
+			<p>This is how aside uses.</p>
+
+		</aside>
+
+	</article>
+
+
+	<aside>
+		
+			<nav>
+				
+				<h2>Aside outside article</h2>
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+				</ul>
+
+			</nav>
+
+	</aside>
+
+
+	<!-- 5.time and micro-struct -->
+	<!-- Time or date, other supplyment. -->
+
+
+	<time datetime="2015-1-1">2015-1-1</time>
+	<time datetime="2015-1-1T20:00">2015-1-1</time>
+	<time datetime="2015-1-1T20:20Z">2015-1-1</time>
+	<time datetime="2015-1-1T20:20+09:00">2015-1-1</time>
+
+
+
+	<!-- 6.pubdate -->
+	<!-- Selective boolean attribute. -->
+
+
+	<article>
+		
+	<header>
+		
+		<h1>Apple</h1>
+		<p>
+			Release Date
+			<time datetime="2015-1-1" pubdate>2015-1-1</time>
+		</p>
+		<p>
+			Other Date
+			<time datetime="2015-1-2">2015-1-2</time>
+		</p>
+	</header>
+
+	</article>
+
+
+
+</body>
+</html>

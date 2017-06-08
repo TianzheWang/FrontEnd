@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Table Elements and Attributes for HTML5</title>
+</head>
+<body>
+
+	<!-- 1,form -->
+
+	<form id = "testform">
+
+		<input type = "text">
+
+		
+	</form>
+
+	<textarea id="testform"></textarea>
+
+
+	<!-- 2.formaction -->
+	<form id = "formtest">
+		
+		<input type = "submit" name = "s1" value = "v1" formaction = "x.jsp">
+
+	</form>
+
+
+	<!-- 2.formmethod -->
+	<form id = "testformmethod">
+		
+		<input type = "submit" name = "s1" value = "v1" formmethod = "POST" formaction = "x.jsp">
+		<input type = "submit" name = "s2" value = "v2" formmethod = "GET" formaction = "x.jsp">
+
+	</form>
+
+
+	<!-- 3,formenctype -->
+	<form>
+		
+		<input type = "text" formenctype = "text/plain">
+		<input type = "text" formenctype = "multipart/form-data">
+		<input type = "text" formenctype = "application/x-www-form-urlencoded">
+
+	</form>
+
+
+
+	<!-- 4.formtarget -->
+	<form>
+		
+		<input type = "submit" name = "s1" value = "v1" formtarget="_blank" formmethod = "POST" formaction = "x.jsp">
+		<!-- Open in a new page. -->
+		<input type = "submit" name = "s2" value = "v2" formtarget="_self" formmethod = "GET" formaction = "x.jsp">
+		<input type = "submit" name = "s2" value = "v2" formtarget="_parent" formmethod = "GET" formaction = "x.jsp">
+		<input type = "submit" name = "s2" value = "v2" formtarget="_top" formmethod = "GET" formaction = "x.jsp">
+		<input type = "submit" name = "s2" value = "v2" formtarget="_framename" formmethod = "GET" formaction = "x.jsp">
+		<!-- Open in frame name. -->
+
+	</form>
+
+
+	<!-- 5.autofocus -->
+	<form>
+		
+		<input type = "text">
+		<input type = "text" autofocus>
+		<!-- Automatically get focus for this form. -->
+
+	</form>
+
+
+
+	<!-- 6.required -->
+	<form action = "x.jsp">
+		
+		<input type = "text" required = "required">
+		<button type = "submit">Submit</button>
+		<!-- Dont't allow empty content. -->
+
+	</form>
+
+
+	<script type = "text/javascript">
+		
+		function Validate() {
+			var txtName = document.getElementById("txt_name");
+			var button = document.getElementById("btnValidate");
+			var form = document.getElementById("testlabel");
+
+			if (txtName.value.trim() == "") {
+				var label = document.createElement("label");
+				label.setAttribute("for", "txt_name");
+				form.insertBefore(label, button);
+				txtName.labels[1].innerHTML = "Please input contents.";
+				txtName.labels[1].setAttribute("style", "font-size: 9px; color: red;");
+			}
+
+		}
+
+	</script>
+
+
+	<!-- 7.labels -->
+	<form id = "testlabel">
+		
+		<label id = "label" for = "txt_name">Name</label>
+		<input id = "txt_name">
+		<input type = "button" id = "btnValidate" value = "Validate" onclick = "Validate()">
+
+	</form>
+
+
+
+</body>
+</html>
